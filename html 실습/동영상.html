@@ -8,32 +8,78 @@
         width: 50px;
         height: 50px;
         margin: 0 auto;
+        border-radius: 10px;
       }
       video {
         width: 500px;
         height: 500px;
+        border-radius: 20px;
       }
-      body{
+      body {
         margin: 0 auto;
         text-align: center;
+        background-color: aliceblue;
       }
-      image{
+      img {
         width: 50%;
         height: 50%;
+      }
+      .컨테이너 {
+        margin: 0 auto;
+        background-color: white;
+      }
+      h1 {
+        text-align: center;
+      }
+      a {
+        text-align: center;
+        margin: 0 auto;
+      }
+      .버튼꾸미기{
+        display: block;
+        text-align: center;
+        
+      }
+      .댓글들{
+        padding: 10px;
+      }
+
+      .댓글{
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: aliceblue;
+        padding: 10px;
       }
     </style>
   </head>
   <body>
-    <h1>동영상 게시판</h1>
-    <a href="홈페이지게시판.html"><img class="icon" src="제목 없음1.png" />게시판</a>
+    <div class="컨테이너">
+      <h1>동영상 게시판</h1>
+      <video autoplay muted loop>
+        <source src="../비디오들/210707_small.mp4" type="video/mp4" />
+      </video>
+      <br />
+      <div class="댓글들">
+        <h2>모든 댓글</h2>
+        <br />
+        <div class="댓글">
+          <p>동영상 대박</p>
+        </div>
+        <div class="댓글">
+          <p>제 블로그에도 놀러 오세요</p>
+        </div>
+      </div>
+      <br />
+      <div class="버튼꾸미기">
+        <a href="홈페이지게시판.html"
+          ><img class="icon" src="제목 없음1.png" />게시판</a
+        >
 
-    <a href="홈페이지메인.html"><img class="icon" src="메인아이콘.png" />메인</a>
-    <br />
-    <video autoplay muted loop>
-      <source
-        src="C:\Users\user1\frontend-workspace\html\비디오들\201766-916357972_small.mp4"
-        type="video/mp4"
-      />
-    </video>
+        <a href="홈페이지메인.html"
+          ><img class="icon" src="메인아이콘.png" />메인</a
+        >
+      </div>
+      <br />
+    </div>
   </body>
 </html>
