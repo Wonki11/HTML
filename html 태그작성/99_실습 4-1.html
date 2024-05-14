@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+        .컨테이너{
+            height: 30px;
+        }
+        .크기{
+            height: 100px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="컨테이너">
+        <form>
+            <label>납품자명 : </label>
+            <input type="text" name="name"><br><br>
+            <label>email : </label> <br>
+            <input type="text" name="email" placeholder="answer@naver.com"><br><br>
+            <label>홈페이지 : </label> <br>
+            <input type="text" name="homepage" value="http://"><br><br>
+            <label>지역 : </label> <br>
+            <input type="text" name="location"><br><br>
+
+            <li>상품명 : </li>
+            <input type="text" name="productName"><br><br>
+            <li>납품수량 : </li>
+            <input type="text" name="amount" placeholder="최소 100" ><br><br>
+            <li>납품등급 : </li>
+            <input type="range" min="1" max="5" name="etc" ><br><br>
+           
+            <li >기타사항 : </li>
+            <input class="크기" type="text" name="grade" ><br><br>
+            
+            <button type="text">send message</button>
+        </form>
+    </div>
+    
+</body>
+</html>
